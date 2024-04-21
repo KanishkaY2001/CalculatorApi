@@ -1,7 +1,7 @@
 # CalculatorApi
-CalculatorApi is a web API project that enables the user to process arithmetic calculations through JSON and XML requests.
-- The project is created through .NET Visual Studio, using the **ASP .NET Core Web API framework.**
-- The project also supports OpenAPI support for Swagger.
+CalculatorApi is a web API that enables the user to process arithmetic calculations through JSON and XML requests.
+- The API is created through .NET Visual Studio, using the **ASP .NET Core Web API framework.**
+- The API also supports OpenAPI support for Swagger.
 - The solution is highly generalized, enabling property names and overall structure to be diverse / different.
 # Considerations
 Although the calculator can theoretically process *any* type of expression, the structure only allows for **Value** followed by **n** number of **operations**. This *drawback* is evident in an expression such as `(4*5) / 3`.
