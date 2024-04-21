@@ -3,11 +3,23 @@ CalculatorApi is a web API that enables the user to process arithmetic calculati
 - The API is created through .NET Visual Studio, using the **ASP .NET Core Web API framework.**
 - The API also supports OpenAPI support for Swagger.
 - The solution is highly generalized, enabling property names and overall structure to be diverse / different.
+
+# Api Details
+- Operations currently supported:
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+      
+- Request types currently supported:
+    - JSON
+    - XML
+  
 # Considerations
 Although the calculator can theoretically process *any* type of expression, the structure only allows for **Value** followed by **n** number of **operations**. This *drawback* is evident in an expression such as `(4*5) / 3`.
 - However, this can be overcome by defining `3` as another operation, effectively transforming the expression into `(4*5) / (3)`. An example of how to format JSON/XML is given in the `Integration_Composite` test file.
 # Request Examples
-The full list of examples are available in the `Tests` directory, showcasing a variety of unit and integration tests and incorporating numerous operations to calculate diverse equations.
+The full list of examples (`NUnit tests`) are available in the `Tests` directory, showcasing a variety of unit and integration tests and incorporating numerous operations to calculate diverse equations.
 
 ## Ex1 → $2 + 3 + (4 + 5) = 25$
 
